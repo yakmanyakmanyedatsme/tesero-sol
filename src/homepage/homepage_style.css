@@ -1,0 +1,286 @@
+.outer_div {
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    height: 38%; 
+    margin-top: 0.5%; 
+    margin-bottom: 1%;
+}
+
+
+.download_buttons {
+    display: flex;
+    justify-content: center;
+    width: 30%; 
+    margin-top: 2%;
+}
+
+.banner {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#button {
+    background-color: rgb(255, 140, 0); /* Orange background */
+    color: rgb(250,240,230);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    border-radius: 20px; /* Simplified notation */
+    border: 0.3rem solid black;
+    font-size: 1.2em;
+    font-family: Signpainter;
+    touch-action: manipulation;
+    font-weight: 600;
+    min-width: 85%;
+    margin-bottom: 3vh;
+    min-height: 5vh;
+    margin-right: 12%;
+    text-align: center;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+    box-shadow: 0 7px 17px rgba(0, 0, 0, 0.4); /* Adds shadow for 3D depth */
+    transform: translateZ(0); /* Prepares the button for 3D transformation */
+    user-select: none; /* Prevents text selection */
+}
+
+
+.intro {
+    background:url(https://i.ibb.co/DCvGbqb/Apply-background.webp) no-repeat 0px 0px;
+      -webkit-background-size: 100% 100%;
+      -moz-background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 1%;
+    background-position: center;
+    width: 87%; 
+    border: 16px solid whitesmoke; /* Adds a black border with 10px thickness */
+    box-sizing: border-box; /* Includes the border in the width and height calculations */
+}
+.intro img {
+    margin-top: 4%;
+    width: 25%;
+    border: 6px solid black;
+    margin-bottom: 4%;
+
+}
+
+.microgrid_image {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    align-content: start;
+    width: 82%;
+    margin-right: 10%;
+    font-size: 2.0em;
+}
+
+
+.microgrid_image_container {
+    margin-left: 9%;
+    margin-right: 9%;
+    display: flex; /* Uses flexbox to layout the child divs side by side */
+    flex-direction: row;
+    justify-content: center; /* Centers the child divs horizontally */
+    align-items: start; /* Aligns the child divs vertically in the middle */
+    gap: 2%; /* Adds space between the child divs */
+}
+
+.main_header {
+    width: 82%;
+    margin-right: 9%;
+    margin-left: 9%;
+    padding-top: 5%;
+    font-size: 2em;
+    text-align: center;
+    background-repeat: repeat;
+    background-clip: text;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.main_header2 {
+    width: 82%;
+    margin-right: 9%;
+    margin-left: 9%;
+    padding-top: 5%;
+    font-size: 4em;
+    text-align: center;
+    color: rgb(30, 144, 255);
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.top_header {
+    width: 82%;
+    margin-right: 9%;
+    margin-left: 9%;
+    font-size: 2em;
+    text-align: center;
+    background-repeat: repeat;
+    background-clip: text;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.top_header p{
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: rgb(30, 144, 255);
+}
+
+.big_container {
+    width: 76%;
+    margin-right: 12%;
+    margin-left: 12%;
+    margin-top: 8%;
+    margin-bottom: 15vh;
+    display: flex; /* Activates flexbox layout mode */
+    justify-content: center; /* Distributes space between the flex items */
+    font-weight: bolder;
+}
+
+.flex_item {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex_item h1 {
+    font-size: 3.3em;
+    font-weight: bolder;
+}
+
+.flex_item p {
+    font-size: 1.8em;
+    width: 75%;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+.ibutt_stuff {
+    width: 0vh;
+}
+
+
+
+
+#button:hover {
+  filter: brightness(1.1);
+}
+
+#button:active {
+  transform: scale(.95);
+}
+
+.grid-container-municipal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    padding: 20px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.grid-container-residential {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: 8%;
+    margin-right: 8%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.grid-item-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.grid-item-img h2 {
+    width:26vh;
+    font-size: 2.2em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-item {
+    align-items: flex-start;
+    height: 75%;
+    padding-left: 7%;
+    padding-right: 7%;
+    text-align: center;
+    font-size: 2.1em;
+
+}
+.image-container {
+
+    margin-top:10%;
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;  // This sets the height of the section to be the full viewport height, adjust as needed
+}
+
+
+.block_image {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: rgb(240, 255, 255, 0.3);
+    border-top: 2em solid rgb(255, 140, 0, 0.70);
+    border-bottom: 2em solid rgb(255, 140, 0, 0.70);
+    font-size: 2.3em;
+    width: 84%; 
+    margin-left: 9%;   
+    margin-right: 9%;
+    height: 60vh;
+    margin-top: 5%;
+}
+
+.energy-services-section {
+    max-width: 80%;
+    margin: auto;
+    padding: 5%;
+    font-family: Arial, sans-serif;
+    font-size: 2.0em;
+}
+
+/* styles.css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

@@ -1,0 +1,503 @@
+body{
+  width: 100%;
+  height:100vh;
+  clear: both;
+  font-family: 'Open Sans', sans-serif;
+  padding:0;
+  margin:0;
+  background: url(https://i.ibb.co/DCvGbqb/Apply-background.webp) no-repeat 0px 0px;
+  -webkit-background-size: 102% 102%;
+  -moz-background-size: 102% 102%;
+  background-size: 102% 102%;
+    background-attachment: fixed;
+    
+}
+body a{
+    transition:0.5s all;
+  -webkit-transition:0.5s all;
+  -moz-transition:0.5s all;
+  -o-transition:0.5s all;
+  -ms-transition:0.5s all;
+  font-weight:400;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin:0;   
+  font-weight:400;
+    transition:0.5s all;
+  -webkit-transition:0.5s all;
+  -moz-transition:0.5s all;
+  -o-transition:0.5s all;
+  -ms-transition:0.5s all;
+  font-family: 'Josefin Sans', sans-serif;
+} 
+
+form div p {
+    font-size:2.5rem;
+}
+
+form div input {
+  font-size:2rem;  
+  background: 0;
+  border: 0;
+}
+
+.clear {
+  clear:both;
+}
+.text-center {
+  text-align:center;
+}
+p {
+  margin:0; 
+}
+label{
+  margin:0;
+}
+img{
+  width:102%;
+}
+
+.agile-volt {
+  height: auto;
+  clear: both;
+}
+/*--header--*/
+.agile-voltheader h1 {
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #faf6f3;
+    padding: 1em 0 1em;
+} 
+.agile-voltsub {
+    width: 40%;
+    margin: 0 auto;
+    background-color: #e6e6e6;/*rgba(224, 224, 224, 0.95);*/
+    opacity: 0.85;
+    box-sizing: border-box;
+    height: auto;
+    padding: 2em;4vh
+    margin-bottom: ;
+    border: 6px solid #333333;
+}
+.agile-voltsub h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    color:rgba(128, 128, 128, 0.5);
+    letter-spacing: 2px;
+    padding: 0.2em 0.2em;
+}
+p {
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 1em 0 0.5em;
+}
+.agile-password input {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: left;
+  text-transform: capitalize;
+  color: darkcyan;
+  background: 0;
+  border: 0;
+  outline: none;
+  width: 100%;
+  height:auto;
+  padding: 2%;
+
+  &:focus {
+    padding-bottom: 5px;
+  }
+
+  // sibling magic ;o
+  &:focus + .line {
+    &:after {
+      transform: scaleX(1);
+    }
+  }
+}
+
+.agile-voltheader label {
+    color: #00e5ff;
+}
+option {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    background: rgba(40, 37, 37, 0.5);
+    color: #fff;
+    border: 2px solid #9e2929;
+    letter-spacing: 2px;
+}
+.agile-days span.Monday {
+  font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+      padding: 0.5em 0;
+}
+.agile-days span.Tuesday {
+      font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+      padding: 0.5em 0;
+}
+.agile-days span.Wednesday {
+      font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+      padding: 0.5em 0;
+    
+}.agile-days span.Thursday {
+      font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+      padding: 0.5em 0;
+}
+.agile-days span.Friday {
+      font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+      padding: 0.5em 0;
+}
+.agile-days span.Saturday {
+
+      font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+      padding: 0.5em 0;
+}
+.agile-days span.Sunday {
+
+      font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+      padding: 0.5em 0;
+}
+select {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 1em 0 1em;
+    width: 60%;
+    margin: 0em 0 1em;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.29);
+    color: #fff;
+    letter-spacing: 1px;
+    outline:none;
+    border: none;
+}
+.agile-from {
+    width: 47%;
+    float: left;
+}
+.agile-to {
+    width: 47%;
+    float: left;
+    margin-left: 3%;
+}
+
+
+
+input[type="submit"] {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background: #000000;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 45%;
+    margin: 2em auto 0;
+    display: block;
+    padding: 0.5em 0.5em;
+  cursor:pointer;
+}
+input[type="submit"]:hover {
+    background: #FFEB3B;
+    transition: 0.5s ease-in;
+    border: 2px solid #ffffff;
+    color: black;
+}
+
+/*--footer--*/
+footer {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 2em 0em 2em;
+}
+footer a{
+  font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #e8ec19;
+  text-decoration:none;
+  
+}
+
+.agile-password {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr; /* Creates two columns of equal width */
+  width: 60%;
+  justify-content: left;
+  align-items: left; /* Centers items vertically */
+  margin-bottom: 3vh;
+  .line {
+    width: 100%;
+    height: 0.4vh;
+    background: #bdc3c7;
+    justify-content: left;
+    &:after {
+      content: " ";
+      position: absolute;
+      float: right;
+      width:60%;
+      height: 3px;
+      
+      transform: scalex(0);
+      transition: transform 0.3s ease;
+      
+      background: #1abc9c;
+    }
+  }
+}
+
+
+}
+.agile-days span {
+    padding-bottom: 2em;
+    display: block;
+}
+textarea {
+    min-height: 130px;
+    resize: none;
+}
+/*--/footer--*/
+/*--responsive--*/
+@media(max-width:1440px){
+  .agile-voltsub {
+    width: 45%;
+  }
+}
+@media(max-width:1366px){
+  .agile-voltsub {
+    width: 50%;
+  }
+}
+@media(max-width:1280px){
+  .agile-voltsub {
+    width: 55%;
+  }
+}
+@media(max-width:1080px){
+  .agile-voltsub {
+    width: 60%;
+  }
+}
+@media(max-width:1050px){
+  
+}
+@media(max-width:1024px){
+  
+}
+@media(max-width:991px){
+  
+}
+@media(max-width:900px){
+  .agile-voltsub {
+    width: 70%;
+  }
+}
+@media(max-width:800px){
+  .agile-voltsub {
+    width: 75%;
+  }
+}
+@media(max-width:768px){
+  .agile-voltsub {
+    width: 80%;
+  }
+}
+@media(max-width:736px){
+footer {
+    line-height: 26px;
+} 
+}
+@media(max-width:667px){
+.agile-voltheader h1 {
+    font-size: 40px;
+}
+}
+@media(max-width:600px){
+  .agile-voltsub {
+    width: 90%;
+  }
+  .agile-voltheader h1 {
+    font-size: 36px;
+  }
+  footer {
+    font-size: 15px;
+  }
+  .agile-voltsub h2 {
+    font-size: 30px;
+}
+}
+@media(max-width:568px){
+  .agile-voltsub {
+    width: 92%;
+}
+}
+@media(max-width:480px){
+  .agile-voltheader h1 {
+    font-size: 28px;
+  }
+}
+@media(max-width:414px){
+.agile-voltheader h1 {
+    line-height: 43px;
+  padding: 1em 0 0.5em;
+}
+.agile-voltsub h2 {
+    font-size: 26px;
+}
+p {
+    font-size: 15px;
+}
+footer {
+    font-size: 14px;
+  letter-spacing:1px;
+}
+input[type="submit"] {
+    margin: 1em auto 0;
+}
+}
+@media(max-width:384px){
+}
+@media(max-width:375px){
+  
+}
+@media(max-width:320px){
+  .agile-voltsub h2 {
+    font-size: 20px;
+  }
+  .agile-voltsub {
+    width: 94%;
+  padding: 1.5em;
+}
+footer {
+
+    font-size: 13px;
+}
+  .agile-from {
+    width: 102%;
+  }
+  .agile-to {
+    width: 102%;
+      margin-left: 1%;
+  }
+  .agile-voltheader h1 {
+    line-height: 35px;
+    padding: 0.8em 0 0.8em;
+}
+footer {
+    line-height: 22px;
+      padding: 1em 0em 1em;
+}
+input[type="submit"] {
+    font-size: 17px;
+}
+footer a {
+    font-size: 13px;
+}
+}
+/*--/responsive--*/
+.bottom-wrapper{
+  width:100%;
+  text-align:center;
+  padding-top: 1.2%;
+  font-size: 1.5rem;
+  height: 6%;
+
+}
+.wsite{
+  text-decoration:none;
+  color:#fff;
+  font-family: 'Whitney', sans-serif;
+  font-size:18px;
+  opacity:0.5;
+  transition:all 100ms ease
+}
+.bottom-wrapper:hover .wsite{
+  opacity:0.8
+}
+
+footer{
+  clear: both;
+  background:#2C2F33;
+  overflow: hidden;
+  margin:0px;
+  bottom: 0;
+  padding:0px;
+  height: auto;
+  width: 100%; /* add this rule */
+}
+
+.submit-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 12px 24px; /* Top and bottom padding, left and right padding */
+    margin-top: 1vh;
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer/hand icon on hover */
+    font-size: 1.5rem; /* Text size */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.submit-button:hover {
+    background-color: #45a049; /* Darker shade of green for hover effect */
+}
+
+.submit-button:active {
+    transform: scale(0.98); /* Slightly shrink when clicked */
+    margin-bottom: 3vh;
+}
+

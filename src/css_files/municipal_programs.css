@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lilita+One&family=Rubik+Mono+One&display=swap');
+.button:hover {
+  filter: brightness(1.1);
+}
+
+.button:active {
+  transform: scale(.95);
+}
+
+.button {
+    background-color: rgb(65, 105, 225); /* Orange background */
+    color: rgb(250,240,230);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    border-radius: 20px; /* Simplified notation */
+    border: 0.3rem solid black;
+    font-size: 0.9em;
+    font-family: Signpainter;
+    touch-action: manipulation;
+    font-weight: 600;
+    min-width: 25%;
+    margin-bottom: 3vh;
+    min-height: 5vh;
+    margin-left: 3%;
+    margin-right:3%;
+    text-align: center;
+    text-transform: uppercase;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+    box-shadow: 0 7px 17px rgba(0, 0, 0, 0.4); /* Adds shadow for 3D depth */
+    transform: translateZ(0); /* Prepares the button for 3D transformation */
+    user-select: none; /* Prevents text selection */
+}
+
+.button_container {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40%;
+
+}
+.list_container {
+  display: flex;
+  justify-content: center;
+  width:80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2vh;
+}
+
+.list {
+    font-size: 0.8rem;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    list-style-type: disc;
+    margin-left: 2%;
+}
+
+.nested_list {
+    list-style-type: circle;
+    margin-left: 2%;
+}
+
+.subsection_title {
+    font-size: 1.5rem;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.paragraph-main-outside {
+    margin-top: 3vh;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 2.4em;
+    width: 80%;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+}
+
+.top-statement {
+  margin-bottom:2%;
+  font-size: 3.6em;
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+  text-align: center;
+  width: 90%;
+  color: black;
+  opacity: 100%;
+ text-shadow: 
+    -1px -1px 0 #fff,  
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff; /* Creates a white border effect */
+}
+
+
+
+.top-container {
+  background:url(https://i.ibb.co/nLzbpZf/anime-style-neighborhood.webp) no-repeat 0px 0px;
+  opacity: 80%;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  flex-direction: column;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start; /* Changed from center to flex-start */
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  height: 35vh;
+  border: 8px solid black;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
