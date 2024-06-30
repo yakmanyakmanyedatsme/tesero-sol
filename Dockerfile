@@ -1,4 +1,4 @@
-ARG APPNAME=my-cool-dioxus-app
+ARG APPNAME=tesero-sol
 
 # The out_dir setting in your `Dioxus.toml` (defaults to `dist`)
 ARG OUTDIR=dist
@@ -43,7 +43,9 @@ RUN dx build --release --platform fullstack
 
 # Move built files to final slim runtime.
 FROM debian:bookworm-slim AS runtime
-
+# Install packages needed to build gems
+RUN apt-get update -qq && \
+    apt-get install --no-install-recommends -y build-essential libpq-dev pkg-config
 # Copy Args
 ARG PORT
 ARG OUTDIR
@@ -56,7 +58,5 @@ COPY --from=builder /app/$OUTDIR /usr/local/bin/$OUTDIR
 RUN mv /usr/local/bin/$OUTDIR/$APPNAME /usr/local/bin/server
 
 WORKDIR /usr/local/bin
-
 EXPOSE $PORT
 ENTRYPOINT [ "/usr/local/bin/server" ]
-
